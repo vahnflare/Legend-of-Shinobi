@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b7adxac45o00c"
+path="res://.godot/imported/2 - The Cave.ogg-646b63d1eeee61defbef7e0b4cf28df5.oggvorbisstr"
+
+[deps]
+
+source_file="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Audio/Musics/2 - The Cave.ogg"
+dest_files=["res://.godot/imported/2 - The Cave.ogg-646b63d1eeee61defbef7e0b4cf28df5.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

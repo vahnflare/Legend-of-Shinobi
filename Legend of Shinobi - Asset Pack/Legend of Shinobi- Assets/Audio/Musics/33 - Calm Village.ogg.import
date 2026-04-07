@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://deye5hfw8v8ob"
+path="res://.godot/imported/33 - Calm Village.ogg-cd288db2e8cf03d621ad2b1dfbb3d7aa.oggvorbisstr"
+
+[deps]
+
+source_file="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Audio/Musics/33 - Calm Village.ogg"
+dest_files=["res://.godot/imported/33 - Calm Village.ogg-cd288db2e8cf03d621ad2b1dfbb3d7aa.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

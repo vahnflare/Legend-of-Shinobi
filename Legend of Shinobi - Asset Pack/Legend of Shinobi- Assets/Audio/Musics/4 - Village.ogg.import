@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cumbvndou80ch"
+path="res://.godot/imported/4 - Village.ogg-cda81c9ab7c0809b35c1b5d4085466c0.oggvorbisstr"
+
+[deps]
+
+source_file="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Audio/Musics/4 - Village.ogg"
+dest_files=["res://.godot/imported/4 - Village.ogg-cda81c9ab7c0809b35c1b5d4085466c0.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

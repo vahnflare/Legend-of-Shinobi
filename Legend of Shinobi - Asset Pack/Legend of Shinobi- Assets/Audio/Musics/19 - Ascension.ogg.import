@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://hkcpxe4dbs6y"
+path="res://.godot/imported/19 - Ascension.ogg-42f94265148b55ba0876148f39c3477b.oggvorbisstr"
+
+[deps]
+
+source_file="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Audio/Musics/19 - Ascension.ogg"
+dest_files=["res://.godot/imported/19 - Ascension.ogg-42f94265148b55ba0876148f39c3477b.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://beev0ffirkvc2"
+path="res://.godot/imported/Magic2.wav-59363cf4d281f0c37267a70bfd26c3db.sample"
+
+[deps]
+
+source_file="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Audio/Sounds/Magic & Skill/Magic2.wav"
+dest_files=["res://.godot/imported/Magic2.wav-59363cf4d281f0c37267a70bfd26c3db.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dtv5krtu0h1g0"
+path="res://.godot/imported/Hit6.wav-69a041b1395f0171c60ae02a17a7a332.sample"
+
+[deps]
+
+source_file="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Audio/Sounds/Hit & Impact/Hit6.wav"
+dest_files=["res://.godot/imported/Hit6.wav-69a041b1395f0171c60ae02a17a7a332.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

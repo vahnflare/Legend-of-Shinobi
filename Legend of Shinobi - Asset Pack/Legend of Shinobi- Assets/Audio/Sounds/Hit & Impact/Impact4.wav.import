@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ctfvl6p8j00y"
+path="res://.godot/imported/Impact4.wav-7db7aefccb4e0fda547d362d074d7174.sample"
+
+[deps]
+
+source_file="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Audio/Sounds/Hit & Impact/Impact4.wav"
+dest_files=["res://.godot/imported/Impact4.wav-7db7aefccb4e0fda547d362d074d7174.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

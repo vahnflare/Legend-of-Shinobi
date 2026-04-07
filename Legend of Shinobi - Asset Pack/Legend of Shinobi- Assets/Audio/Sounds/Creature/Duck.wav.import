@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://6f1v6v2c6xrr"
+path="res://.godot/imported/Duck.wav-7dc7c604dde273c92ae09993f7804dc7.sample"
+
+[deps]
+
+source_file="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Audio/Sounds/Creature/Duck.wav"
+dest_files=["res://.godot/imported/Duck.wav-7dc7c604dde273c92ae09993f7804dc7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

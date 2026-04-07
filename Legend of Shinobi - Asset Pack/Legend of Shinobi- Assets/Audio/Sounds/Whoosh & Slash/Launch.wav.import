@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cv4wmb6kv7vgx"
+path="res://.godot/imported/Launch.wav-c7bab23c0802c5413dcc6c5a4023e2dc.sample"
+
+[deps]
+
+source_file="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Audio/Sounds/Whoosh & Slash/Launch.wav"
+dest_files=["res://.godot/imported/Launch.wav-c7bab23c0802c5413dcc6c5a4023e2dc.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://285blnaicn7m"
+path="res://.godot/imported/Jump3.wav-8463d166be1721454e1d3dd236442291.sample"
+
+[deps]
+
+source_file="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Audio/Sounds/Jump & Bounce/Jump3.wav"
+dest_files=["res://.godot/imported/Jump3.wav-8463d166be1721454e1d3dd236442291.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

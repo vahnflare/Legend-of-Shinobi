@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c43xbrrbxk0kc"
+path="res://.godot/imported/Success3.wav-576d46fb24c2f547aa3af9a34fc2c83b.sample"
+
+[deps]
+
+source_file="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Audio/Jingles/Success3.wav"
+dest_files=["res://.godot/imported/Success3.wav-576d46fb24c2f547aa3af9a34fc2c83b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
