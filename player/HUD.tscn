@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://ch25khjoyvkot"]
+
+[ext_resource type="Script" uid="uid://cxsdhs53ve6av" path="res://h_box_container.gd" id="1_vow1y"]
+[ext_resource type="Script" uid="uid://u7p1vlad7bp3" path="res://health_bar.gd" id="2_ne771"]
+[ext_resource type="Texture2D" uid="uid://3pjgwlfhqhkr" path="res://hud_heartFull.png" id="3_xxqia"]
+
+[node name="Node2D" type="Node2D" unique_id=939804147]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1366120093]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_vow1y")
+
+[node name="Health Bar" type="TextureRect" parent="HBoxContainer" unique_id=2111362436]
+layout_mode = 2
+script = ExtResource("2_ne771")
+
+[node name="HudHeartFull" type="Sprite2D" parent="HBoxContainer" unique_id=440142244]
+position = Vector2(63, 48)
+texture = ExtResource("3_xxqia")
+
+[node name="HudHeartFull2" type="Sprite2D" parent="HBoxContainer" unique_id=2050404843]
+position = Vector2(121, 48)
+texture = ExtResource("3_xxqia")
+
+[node name="HudHeartFull3" type="Sprite2D" parent="HBoxContainer" unique_id=601406160]
+position = Vector2(176, 48)
+texture = ExtResource("3_xxqia")
