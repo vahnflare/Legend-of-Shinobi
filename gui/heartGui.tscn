@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqulx0a08d3rq"]
+
+[ext_resource type="Script" uid="uid://8rkmy6k44hir" path="res://gui/heart_gui.gd" id="1_6gb0c"]
+[ext_resource type="Texture2D" uid="uid://bp65hgq7y2rtq" path="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Ui/Receptacle/Heart.png" id="1_rl0pm"]
+
+[node name="HeartGui" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(16, 13)
+offset_right = 16.0
+offset_bottom = 13.0
+script = ExtResource("1_6gb0c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -2)
+texture = ExtResource("1_rl0pm")
+centered = false
+hframes = 5

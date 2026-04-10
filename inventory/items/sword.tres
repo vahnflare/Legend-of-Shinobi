@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://ck6fhtanu072g"]
+
+[ext_resource type="Script" uid="uid://qxm41fm5so5j" path="res://inventory/inventoryItem.gd" id="1_ly8s8"]
+[ext_resource type="Texture2D" uid="uid://c2vdvoc3815sb" path="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Items/Weapons/BigSword/Sprite.png" id="2_ach73"]
+
+[resource]
+script = ExtResource("1_ly8s8")
+name = "sword"
+texture = ExtResource("2_ach73")
+metadata/_custom_type_script = "uid://qxm41fm5so5j"

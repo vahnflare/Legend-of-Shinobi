@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c45moqppwa21r"]
+[gd_scene load_steps=13 format=3 uid="uid://c45moqppwa21r"]
 
 [ext_resource type="Script" uid="uid://by4hpv0g1oosv" path="res://player/scenes/world.gd" id="1_cx0de"]
 [ext_resource type="PackedScene" uid="uid://calkaoeitsr5l" path="res://player/player.tscn" id="1_vfgwb"]
@@ -7,11 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://c8jfkx0ve8qiw" path="res://art/animated flower.png" id="4_d66d3"]
 [ext_resource type="Script" uid="uid://bqvj0cdxyxauj" path="res://camera/follow_cam.gd" id="5_l0ej8"]
 [ext_resource type="PackedScene" uid="uid://bunp7e2ngw7d7" path="res://enemies/slime.tscn" id="5_riqyw"]
-[ext_resource type="PackedScene" uid="uid://bi7qxhctuj0k5" path="res://collectibles/sword.tscn" id="6_k7sas"]
 [ext_resource type="PackedScene" uid="uid://euhl00nm3gvj" path="res://gui/heartsContainer.tscn" id="7_qlbe4"]
-[ext_resource type="PackedScene" uid="uid://2use4r8if8qv" path="res://collectibles/lifepot.tscn" id="9_tg0qh"]
-[ext_resource type="Script" uid="uid://dfpsgap7dwb0i" path="res://gui/canvas_layer.gd" id="10_fnad4"]
-[ext_resource type="PackedScene" uid="uid://bts2don3vseob" path="res://gui/inventory_gui.tscn" id="11_6clgd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l0ej8"]
 texture = ExtResource("2_6c4fl")
@@ -1149,11 +1145,6 @@ texture = ExtResource("4_d66d3")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6.2950554, -4.13675, 5.3957615, -3.5971737, 5.75548, 6.4749146, -6.4749146, 6.4749146)
 
-[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_tg0qh"]
-resource_name = "Collectibles"
-scenes/1/scene = ExtResource("9_tg0qh")
-scenes/2/scene = ExtResource("6_k7sas")
-
 [sub_resource type="TileSet" id="TileSet_qlbe4"]
 physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
@@ -1162,7 +1153,6 @@ terrain_set_0/terrain_0/color = Color(0.6337528, 0.16759619, 0.46800792, 1)
 sources/0 = SubResource("TileSetAtlasSource_l0ej8")
 sources/1 = SubResource("TileSetAtlasSource_riqyw")
 sources/2 = SubResource("TileSetAtlasSource_qlbe4")
-sources/4 = SubResource("TileSetScenesCollectionSource_tg0qh")
 
 [node name="World" type="Node2D"]
 y_sort_enabled = true
@@ -1182,8 +1172,6 @@ layer_2/name = "trees"
 layer_2/y_sort_enabled = true
 layer_2/z_index = 1
 layer_2/tile_data = PackedInt32Array(131076, 1, 0, -131066, 1, 0, -196605, 1, 0, -196607, 1, 0, 262138, 1, 0, 655375, 1, 0, 589840, 1, 0, 589839, 1, 0, 589825, 1, 0, 655362, 1, 0, 655361, 1, 0, 458771, 1, 0)
-layer_3/name = "Collectibles"
-layer_3/tile_data = PackedInt32Array(196608, 4, 65536, 262146, 4, 65536, 131069, 4, 65536, 0, 4, 131072, 5, 4, 131072, -2, 4, 131072, -1, 4, 131072, -65535, 4, 131072, 131078, 4, 131072)
 
 [node name="Player" parent="TileMap" instance=ExtResource("1_vfgwb")]
 position = Vector2(11, 42)
@@ -1209,29 +1197,15 @@ limit_left = 0
 limit_top = 0
 limit_right = 480
 limit_bottom = 288
-position_smoothing_enabled = true
-position_smoothing_speed = 10.0
 script = ExtResource("5_l0ej8")
 tilemap = NodePath("../TileMap")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-process_mode = 3
-script = ExtResource("10_fnad4")
 
 [node name="HeartsContainer" parent="CanvasLayer" instance=ExtResource("7_qlbe4")]
-
-[node name="InventoryGui" parent="CanvasLayer" instance=ExtResource("11_6clgd")]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -69.5
-offset_top = -47.5
-offset_right = 69.5
-offset_bottom = 47.5
-grow_horizontal = 2
-grow_vertical = 2
-
-[connection signal="closed" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_closed"]
-[connection signal="opened" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_opened"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -52.0
+offset_right = 0.0
+grow_horizontal = 0

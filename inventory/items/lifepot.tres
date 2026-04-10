@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://b8cy6ex1o6l22"]
+
+[ext_resource type="Script" uid="uid://qxm41fm5so5j" path="res://inventory/inventoryItem.gd" id="1_hy83u"]
+[ext_resource type="Texture2D" uid="uid://dnirn01sk6wcf" path="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Items/Potion/LifePot.png" id="2_rmc5d"]
+
+[resource]
+script = ExtResource("1_hy83u")
+name = "lifepot"
+texture = ExtResource("2_rmc5d")
+metadata/_custom_type_script = "uid://qxm41fm5so5j"
