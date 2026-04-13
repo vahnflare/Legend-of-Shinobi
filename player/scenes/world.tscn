@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c45moqppwa21r"]
+[gd_scene load_steps=19 format=3 uid="uid://c45moqppwa21r"]
 
 [ext_resource type="Script" uid="uid://by4hpv0g1oosv" path="res://player/scenes/world.gd" id="1_cx0de"]
 [ext_resource type="PackedScene" uid="uid://calkaoeitsr5l" path="res://player/player.tscn" id="1_vfgwb"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bunp7e2ngw7d7" path="res://enemies/slime.tscn" id="5_riqyw"]
 [ext_resource type="PackedScene" uid="uid://bi7qxhctuj0k5" path="res://collectibles/sword.tscn" id="6_k7sas"]
 [ext_resource type="PackedScene" uid="uid://euhl00nm3gvj" path="res://gui/heartsContainer.tscn" id="7_qlbe4"]
+[ext_resource type="PackedScene" uid="uid://bmmqhrfrg030t" path="res://npc/npc.tscn" id="9_31fws"]
 [ext_resource type="PackedScene" uid="uid://2use4r8if8qv" path="res://collectibles/lifepot.tscn" id="9_tg0qh"]
 [ext_resource type="Script" uid="uid://dfpsgap7dwb0i" path="res://gui/canvas_layer.gd" id="10_fnad4"]
 [ext_resource type="PackedScene" uid="uid://bts2don3vseob" path="res://gui/inventory_gui.tscn" id="11_6clgd"]
@@ -1202,6 +1203,12 @@ endPoint = NodePath("Marker2D")
 
 [node name="Marker2D" type="Marker2D" parent="TileMap/Slime3"]
 position = Vector2(-14, -184)
+
+[node name="npc" parent="TileMap" node_paths=PackedStringArray("endPoint") instance=ExtResource("9_31fws")]
+position = Vector2(440, 14)
+endPoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="TileMap/npc"]
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("tilemap")]
 position = Vector2(123, 107)
