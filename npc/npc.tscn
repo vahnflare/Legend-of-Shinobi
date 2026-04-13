@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bmmqhrfrg030t"]
+[gd_scene load_steps=11 format=3 uid="uid://bmmqhrfrg030t"]
 
 [ext_resource type="Texture2D" uid="uid://c80h7x10euqg3" path="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Actor/Character/Cavegirl/SpriteSheet.png" id="1_2xp5l"]
 [ext_resource type="Script" uid="uid://b8pxfd1rp4y4x" path="res://npc/npc.gd" id="1_nhy3c"]
@@ -11,11 +11,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-<<<<<<< HEAD
-tracks/0/path = NodePath("CaveGirl:frame_coords")
-=======
 tracks/0/path = NodePath("Sprite2D:frame_coords")
->>>>>>> 2ecfe319e907d2775a649a6f0f15e27dffa8f6a7
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -24,35 +20,37 @@ tracks/0/keys = {
 "update": 1,
 "values": [Vector2i(0, 0)]
 }
-
-<<<<<<< HEAD
-=======
-[sub_resource type="Animation" id="Animation_nhy3c"]
-resource_name = "walk_up"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame_coords")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 1,
-"values": [Vector2i(1, 0), Vector2i(1, 1), Vector2i(1, 2), Vector2i(1, 3)]
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("InteractionArea/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-0.5, -8)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("InteractionArea/CollisionShape2D:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
 }
 
->>>>>>> 2ecfe319e907d2775a649a6f0f15e27dffa8f6a7
 [sub_resource type="Animation" id="Animation_3i1kj"]
 resource_name = "walk_down"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-<<<<<<< HEAD
-tracks/0/path = NodePath("CaveGirl:frame_coords")
-=======
 tracks/0/path = NodePath("Sprite2D:frame_coords")
->>>>>>> 2ecfe319e907d2775a649a6f0f15e27dffa8f6a7
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -61,17 +59,37 @@ tracks/0/keys = {
 "update": 1,
 "values": [Vector2i(0, 0), Vector2i(0, 1), Vector2i(0, 2), Vector2i(0, 3)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("InteractionArea/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-0.5, -8), Vector2(-0.5, -8), Vector2(-0.5, -8), Vector2(-0.5, -8)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("InteractionArea/CollisionShape2D:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1), Vector2(1, 1), Vector2(1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_o6cys"]
 resource_name = "walk_left"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-<<<<<<< HEAD
-tracks/0/path = NodePath("CaveGirl:frame_coords")
-=======
 tracks/0/path = NodePath("Sprite2D:frame_coords")
->>>>>>> 2ecfe319e907d2775a649a6f0f15e27dffa8f6a7
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -80,17 +98,37 @@ tracks/0/keys = {
 "update": 1,
 "values": [Vector2i(2, 0), Vector2i(2, 1), Vector2i(2, 2), Vector2i(2, 3)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("InteractionArea/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-0.5, -8), Vector2(-0.5, -8), Vector2(-0.5, -8), Vector2(-0.5, -8)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("InteractionArea/CollisionShape2D:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1), Vector2(1, 1), Vector2(1, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_ldo70"]
 resource_name = "walk_right"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-<<<<<<< HEAD
-tracks/0/path = NodePath("CaveGirl:frame_coords")
-=======
 tracks/0/path = NodePath("Sprite2D:frame_coords")
->>>>>>> 2ecfe319e907d2775a649a6f0f15e27dffa8f6a7
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -99,14 +137,37 @@ tracks/0/keys = {
 "update": 1,
 "values": [Vector2i(3, 0), Vector2i(3, 1), Vector2i(3, 2), Vector2i(3, 3)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("InteractionArea/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-0.5, -8), Vector2(-0.5, -8), Vector2(-0.5, -8), Vector2(-0.5, -8)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("InteractionArea/CollisionShape2D:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1), Vector2(1, 1), Vector2(1, 1)]
+}
 
-<<<<<<< HEAD
 [sub_resource type="Animation" id="Animation_nhy3c"]
 resource_name = "walk_up"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("CaveGirl:frame_coords")
+tracks/0/path = NodePath("Sprite2D:frame_coords")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -115,9 +176,31 @@ tracks/0/keys = {
 "update": 1,
 "values": [Vector2i(1, 0), Vector2i(1, 1), Vector2i(1, 2), Vector2i(1, 3)]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("InteractionArea/CollisionShape2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-0.5, -8), Vector2(-0.5, -8), Vector2(-0.5, -8), Vector2(-0.5, -8)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("InteractionArea/CollisionShape2D:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 1), Vector2(1, 1), Vector2(1, 1)]
+}
 
-=======
->>>>>>> 2ecfe319e907d2775a649a6f0f15e27dffa8f6a7
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3i1kj"]
 _data = {
 &"RESET": SubResource("Animation_2xp5l"),
@@ -127,25 +210,18 @@ _data = {
 &"walk_up": SubResource("Animation_nhy3c")
 }
 
-<<<<<<< HEAD
-[node name="npc" type="CharacterBody2D" node_paths=PackedStringArray("endPoint")]
-script = ExtResource("1_nhy3c")
-endPoint = NodePath("Marker2D")
-=======
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3i1kj"]
+size = Vector2(19, 20)
+
 [node name="npc" type="CharacterBody2D"]
 script = ExtResource("1_nhy3c")
->>>>>>> 2ecfe319e907d2775a649a6f0f15e27dffa8f6a7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 position = Vector2(-0.5, -8)
 shape = SubResource("RectangleShape2D_nhy3c")
 
-<<<<<<< HEAD
-[node name="CaveGirl" type="Sprite2D" parent="."]
-=======
 [node name="Sprite2D" type="Sprite2D" parent="."]
->>>>>>> 2ecfe319e907d2775a649a6f0f15e27dffa8f6a7
 position = Vector2(0, -8)
 texture = ExtResource("1_2xp5l")
 hframes = 4
@@ -155,9 +231,25 @@ vframes = 7
 libraries = {
 &"": SubResource("AnimationLibrary_3i1kj")
 }
-<<<<<<< HEAD
 
-[node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(0, 7)
-=======
->>>>>>> 2ecfe319e907d2775a649a6f0f15e27dffa8f6a7
+[node name="InteractionArea" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+position = Vector2(-0.5, -8)
+shape = SubResource("RectangleShape2D_3i1kj")
+
+[node name="DialogueUI" type="Node2D" parent="."]
+position = Vector2(-20, 5)
+
+[node name="Panel" type="Panel" parent="DialogueUI"]
+offset_right = 40.0
+offset_bottom = 24.0
+
+[node name="Label" type="Label" parent="DialogueUI/Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 6
+horizontal_alignment = 1
+vertical_alignment = 1
