@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cpc4to7oybe1i"]
+[gd_scene load_steps=4 format=3 uid="uid://cpc4to7oybe1i"]
 
 [ext_resource type="Texture2D" uid="uid://du403s2l4fc4g" path="res://art/inventorySlot.png" id="1_5nm7y"]
 [ext_resource type="Script" uid="uid://bictjlt1ygljf" path="res://gui/slot_gui.gd" id="1_adqb6"]
+[ext_resource type="FontFile" uid="uid://qv54h3y13wdj" path="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Ui/Font/NormalFont.ttf" id="3_v8xyc"]
 
 [node name="Slot" type="Panel"]
 self_modulate = Color(1, 1, 1, 0)
@@ -25,3 +26,17 @@ offset_bottom = 20.0
 layout_mode = 2
 
 [node name="item" type="Sprite2D" parent="CenterContainer/Panel"]
+
+[node name="Label" type="Label" parent="CenterContainer/Panel"]
+custom_minimum_size = Vector2(11, 14)
+layout_mode = 0
+offset_left = -2.0
+offset_top = -1.0
+offset_right = 9.0
+offset_bottom = 13.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_v8xyc")
+theme_override_font_sizes/font_size = 8
+text = "99"
+horizontal_alignment = 2

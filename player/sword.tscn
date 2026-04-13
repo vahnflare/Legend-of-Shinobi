@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5p33s6qecr4v"]
+
+[ext_resource type="Texture2D" uid="uid://c2vdvoc3815sb" path="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Items/Weapons/BigSword/Sprite.png" id="1_rk2yr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rk2yr"]
+size = Vector2(4, 10.375)
+
+[node name="sword" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -6)
+texture = ExtResource("1_rk2yr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -7.8125)
+shape = SubResource("RectangleShape2D_rk2yr")

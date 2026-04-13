@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://2use4r8if8qv"]
+[gd_scene load_steps=5 format=3 uid="uid://2use4r8if8qv"]
 
 [ext_resource type="PackedScene" uid="uid://dyudwgposxqt" path="res://collectibles/collectable.tscn" id="1_h5d1w"]
+[ext_resource type="Resource" uid="uid://b8cy6ex1o6l22" path="res://inventory/items/lifepot.tres" id="2_5aq04"]
 [ext_resource type="Texture2D" uid="uid://dnirn01sk6wcf" path="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Items/Potion/LifePot.png" id="2_dwrae"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5aq04"]
@@ -8,6 +9,7 @@ resource_local_to_scene = true
 size = Vector2(8, 10)
 
 [node name="Lifepot" instance=ExtResource("1_h5d1w")]
+itemRes = ExtResource("2_5aq04")
 
 [node name="CollisionShape2D" parent="." index="0"]
 shape = SubResource("RectangleShape2D_5aq04")
