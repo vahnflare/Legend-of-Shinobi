@@ -1191,18 +1191,32 @@ position = Vector2(11, 42)
 
 [node name="Slime" parent="TileMap" node_paths=PackedStringArray("endPoint") instance=ExtResource("5_riqyw")]
 position = Vector2(69, 77)
+collision_layer = 3
+collision_mask = 3
 endPoint = NodePath("../Slime3/Marker2D")
 
 [node name="Slime2" parent="TileMap" node_paths=PackedStringArray("endPoint") instance=ExtResource("5_riqyw")]
 position = Vector2(228, 9)
+collision_layer = 3
+collision_mask = 3
 endPoint = NodePath("../Slime3/Marker2D")
 
 [node name="Slime3" parent="TileMap" node_paths=PackedStringArray("endPoint") instance=ExtResource("5_riqyw")]
 position = Vector2(108, 182)
+collision_layer = 3
+collision_mask = 3
 endPoint = NodePath("Marker2D")
 
 [node name="Marker2D" type="Marker2D" parent="TileMap/Slime3"]
 position = Vector2(-40, -88)
+
+[node name="npc" parent="TileMap" node_paths=PackedStringArray("endPoint") instance=ExtResource("13_31fws")]
+position = Vector2(450, 28)
+collision_layer = 3
+collision_mask = 3
+endPoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="TileMap/npc"]
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("tilemap")]
 position = Vector2(123, 107)
@@ -1233,12 +1247,6 @@ offset_right = 69.5
 offset_bottom = 47.5
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="npc" parent="." node_paths=PackedStringArray("endPoint") instance=ExtResource("13_31fws")]
-position = Vector2(562, 93)
-endPoint = NodePath("Marker2D")
-
-[node name="Marker2D" type="Marker2D" parent="npc"]
 
 [connection signal="closed" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_closed"]
 [connection signal="opened" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_opened"]
