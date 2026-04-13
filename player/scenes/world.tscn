@@ -1234,8 +1234,11 @@ offset_bottom = 47.5
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="npc" parent="." instance=ExtResource("13_31fws")]
-position = Vector2(229, 72)
+[node name="npc" parent="." node_paths=PackedStringArray("endPoint") instance=ExtResource("13_31fws")]
+position = Vector2(562, 93)
+endPoint = NodePath("Marker2D")
+
+[node name="Marker2D" type="Marker2D" parent="npc"]
 
 [connection signal="closed" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_closed"]
 [connection signal="opened" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_opened"]
