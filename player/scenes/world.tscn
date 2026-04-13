@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c45moqppwa21r"]
+[gd_scene load_steps=19 format=3 uid="uid://c45moqppwa21r"]
 
 [ext_resource type="Script" uid="uid://by4hpv0g1oosv" path="res://player/scenes/world.gd" id="1_cx0de"]
 [ext_resource type="PackedScene" uid="uid://calkaoeitsr5l" path="res://player/player.tscn" id="1_vfgwb"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://2use4r8if8qv" path="res://collectibles/lifepot.tscn" id="9_tg0qh"]
 [ext_resource type="Script" uid="uid://dfpsgap7dwb0i" path="res://gui/canvas_layer.gd" id="10_fnad4"]
 [ext_resource type="PackedScene" uid="uid://bts2don3vseob" path="res://gui/inventory_gui.tscn" id="11_6clgd"]
+[ext_resource type="PackedScene" uid="uid://bmmqhrfrg030t" path="res://npc/npc.tscn" id="13_31fws"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l0ej8"]
 texture = ExtResource("2_6c4fl")
@@ -1189,19 +1190,19 @@ layer_3/tile_data = PackedInt32Array(196608, 4, 65536, 262146, 4, 65536, 131069,
 position = Vector2(11, 42)
 
 [node name="Slime" parent="TileMap" node_paths=PackedStringArray("endPoint") instance=ExtResource("5_riqyw")]
-position = Vector2(53, 39)
+position = Vector2(69, 77)
 endPoint = NodePath("../Slime3/Marker2D")
 
 [node name="Slime2" parent="TileMap" node_paths=PackedStringArray("endPoint") instance=ExtResource("5_riqyw")]
-position = Vector2(232, 14)
+position = Vector2(228, 9)
 endPoint = NodePath("../Slime3/Marker2D")
 
 [node name="Slime3" parent="TileMap" node_paths=PackedStringArray("endPoint") instance=ExtResource("5_riqyw")]
-position = Vector2(83, 179)
+position = Vector2(108, 182)
 endPoint = NodePath("Marker2D")
 
 [node name="Marker2D" type="Marker2D" parent="TileMap/Slime3"]
-position = Vector2(-14, -184)
+position = Vector2(-40, -88)
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("tilemap")]
 position = Vector2(123, 107)
@@ -1232,6 +1233,9 @@ offset_right = 69.5
 offset_bottom = 47.5
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="npc" parent="." instance=ExtResource("13_31fws")]
+position = Vector2(229, 72)
 
 [connection signal="closed" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_closed"]
 [connection signal="opened" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_opened"]

@@ -5,6 +5,12 @@ extends Panel
 @onready var amountLabel: Label = $CenterContainer/Panel/Label
 
 func update(slot: InventorySlot):
+	if slot == null:
+		backgroundSprite.frame = 0
+		itemSprite.visible = false
+		amountLabel.visible = false
+		return
+
 	if !slot.item:
 		backgroundSprite.frame = 0
 		itemSprite.visible = false

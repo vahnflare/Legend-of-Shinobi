@@ -15,8 +15,11 @@ signal healthChanged
 @onready var hurtTimer = $hurtTimer
 @onready var sprite = $Sprite2D
 @onready var currentHealth: int = maxHealth
+@onready var weapon = $weapon
 
+var lastAnimDirection: String = "Down"
 var isHurt: bool = false
+var isAttacking: bool = false
 
 func _ready():
 	effects.play("RESET")
@@ -25,29 +28,55 @@ func handleInput():
 	var moveDirection = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	velocity = moveDirection*speed
 
+	if Input.is_action_just_pressed("attack"):
+		attack()
+
+func attack():
+	if isAttacking:
+		return
+	
+	isAttacking = true
+	animations.play("attack" + lastAnimDirection)
+	weapon.enable()
+
+	await animations.animation_finished
+
+	weapon.disable()
+	isAttacking = false
+	
+	# go back to idle AFTER attack
+	animations.play("idle" + lastAnimDirection)
+
+
 func updateAnimation():
+	if isAttacking:
+		return
+	
 	if velocity.length() == 0:
-		if animations.is_playing():
-			animations.stop()
+		animations.play("idle" + lastAnimDirection)
 	else:
 		var direction = "Down"
 		if velocity.x < 0: direction = "Left"
 		elif velocity.x > 0: direction = "Right"
-		elif velocity.y <0: direction = "Up"
-	
+		elif velocity.y < 0: direction = "Up"
+		
+		lastAnimDirection = direction
 		animations.play("walk" + direction)
 
 func handleCollision():
 	for i in get_slide_collision_count():
 		var collision = get_slide_collision(i)
 		var collider = collision.get_collider()
-		print_debug(collider.name)
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	handleInput()
+	
+	if not isAttacking:
+		updateAnimation()
+	
 	move_and_slide()
 	handleCollision()
-	updateAnimation()
+	
 	if !isHurt:
 		for area in HurtBox.get_overlapping_areas():
 			if area.name == "HitBox":
@@ -76,4 +105,4 @@ func knockback(enemyVelocity: Vector2):
 	velocity = knockbackDirection
 	move_and_slide()
 
-func _on_hurt_box_area_exited(area: Area2D) -> void: pass
+func _on_hurt_box_area_exited(_area: Area2D) -> void: pass
