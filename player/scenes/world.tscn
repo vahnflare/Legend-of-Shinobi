@@ -1188,6 +1188,8 @@ layer_3/tile_data = PackedInt32Array(196608, 4, 65536, 262146, 4, 65536, 131069,
 
 [node name="Player" parent="TileMap" instance=ExtResource("1_vfgwb")]
 position = Vector2(11, 42)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Slime" parent="TileMap" node_paths=PackedStringArray("endPoint") instance=ExtResource("5_riqyw")]
 position = Vector2(69, 77)
