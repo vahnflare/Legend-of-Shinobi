@@ -3,10 +3,11 @@ extends CharacterBody2D
 @export var speed = 20
 @export var limit = 0.5
 @export var endPoint: Marker2D
-@export var knockback_power: float = 200
+@export var knockback_power: float = 100
 @export var health: int = 3
 
 @onready var animations = $AnimationPlayer
+@onready var death_sound = $DeathSound
 
 var startPosition
 var endPosition
@@ -80,6 +81,8 @@ func _on_hurt_box_area_entered(area: Area2D) -> void:
 func die():
 	isDead = true
 	$HitBox.set_deferred("monitoring", false)
+	death_sound.stop()
+	death_sound.play()
 	animations.play("death")
 	await animations.animation_finished
 	queue_free()

@@ -16,6 +16,7 @@ signal healthChanged
 @onready var sprite = $Sprite2D
 @onready var currentHealth: int = maxHealth
 @onready var weapon = $weapon
+@onready var attack_sound = $AttackSound
 
 var lastAnimDirection: String = "Down"
 var isHurt: bool = false
@@ -30,6 +31,7 @@ func handleInput():
 
 	if Input.is_action_just_pressed("attack"):
 		attack()
+		
 
 func attack():
 	if isAttacking:
@@ -37,6 +39,8 @@ func attack():
 	
 	isAttacking = true
 	animations.play("attack" + lastAnimDirection)
+	attack_sound.stop()
+	attack_sound.play()
 	weapon.enable()
 
 	await animations.animation_finished
