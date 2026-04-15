@@ -1265,6 +1265,7 @@ grow_vertical = 2
 
 [node name="AdventureMusic" type="AudioStreamPlayer" parent="." unique_id=1112537079]
 stream = ExtResource("14_jfwxp")
+volume_db = -10.0
 autoplay = true
 parameters/looping = true
 
