@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://degefrdf7yeud" path="res://scenes/base_scene.gd" id="1_xoj0w"]
 [ext_resource type="Texture2D" uid="uid://bohjp5li8nk44" path="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Backgrounds/Tilesets/TilesetElement.png" id="3_7b85a"]
 [ext_resource type="PackedScene" uid="uid://co55syytak4bs" path="res://scenes/scene_trigger.tscn" id="5_xoj0w"]
+[ext_resource type="PackedScene" uid="uid://calkaoeitsr5l" path="res://player/player.tscn" id="6_08v5b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k5w3f"]
 texture = ExtResource("1_wriv2")
@@ -440,15 +441,16 @@ layer_1/z_index = 1
 layer_1/tile_data = PackedInt32Array(131080, 196612, 7, 131081, 196612, 7, 131076, 4, 7, 131077, 4, 7, 131082, 4, 7, 131079, 196612, 7, 196612, 4, 7, 393225, 131076, 9, 393226, 131076, 9)
 
 [node name="EntranceMarkers" type="Node2D" parent="." unique_id=791937469]
-position = Vector2(91, 102)
 
 [node name="any" type="Marker2D" parent="EntranceMarkers" unique_id=861762024]
-position = Vector2(-4, 5)
+position = Vector2(88, 106)
 
 [node name="SceneTrigger" parent="." unique_id=1228525597 instance=ExtResource("5_xoj0w")]
-position = Vector2(88, 99)
+position = Vector2(87, 118)
 connected_scene = "World"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SceneTrigger" unique_id=672563610]
-position = Vector2(0, 19)
+position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_xoj0w")
+
+[node name="Player" parent="." unique_id=1223032299 instance=ExtResource("6_08v5b")]

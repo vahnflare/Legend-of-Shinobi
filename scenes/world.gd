@@ -2,10 +2,11 @@ extends BaseScene
 
 @onready var heartsContainer = $CanvasLayer/HeartsContainer
 @onready var music = $AdventureMusic
+@onready var camera = $follow_cam
 
 func _ready():
 	super()
-	await get_tree().process_frame  
+	camera.follow_node = player 
 
 	if player:
 		heartsContainer.setMaxHearts(player.maxHealth)

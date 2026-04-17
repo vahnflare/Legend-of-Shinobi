@@ -1233,17 +1233,6 @@ endPoint = NodePath("Marker2D")
 
 [node name="Marker2D" type="Marker2D" parent="TileMap/npc" unique_id=203581775]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=781555720 node_paths=PackedStringArray("tilemap")]
-position = Vector2(123, 107)
-limit_left = 0
-limit_top = 0
-limit_right = 480
-limit_bottom = 288
-position_smoothing_enabled = true
-position_smoothing_speed = 10.0
-script = ExtResource("5_l0ej8")
-tilemap = NodePath("../TileMap")
-
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=545408039]
 process_mode = 3
 script = ExtResource("10_fnad4")
@@ -1278,14 +1267,25 @@ z_index = 1
 position = Vector2(0, -1.5)
 shape = SubResource("RectangleShape2D_dss4m")
 
-[node name="Player" parent="." unique_id=1706851093 instance=ExtResource("1_vfgwb")]
-position = Vector2(123, 107)
-
 [node name="EntranceMarkers" type="Node2D" parent="." unique_id=1973316429]
-position = Vector2(48, 245)
+position = Vector2(0, 1)
 
 [node name="InsideHouse" type="Marker2D" parent="EntranceMarkers" unique_id=888150843]
-position = Vector2(1, 7)
+position = Vector2(48, 247)
+
+[node name="follow_cam" type="Camera2D" parent="." unique_id=781555720 node_paths=PackedStringArray("tilemap")]
+position = Vector2(123, 107)
+limit_left = 0
+limit_top = 0
+limit_right = 480
+limit_bottom = 288
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+script = ExtResource("5_l0ej8")
+tilemap = NodePath("../TileMap")
+
+[node name="Player" parent="." unique_id=1706851093 instance=ExtResource("1_vfgwb")]
+position = Vector2(134, 90)
 
 [connection signal="closed" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_closed"]
 [connection signal="opened" from="CanvasLayer/InventoryGui" to="." method="_on_inventory_gui_opened"]
