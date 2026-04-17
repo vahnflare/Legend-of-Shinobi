@@ -56,7 +56,7 @@ func _physics_process(delta):
 		if knockback_velocity.length() < 10:
 			isKnockback = false
 		return
-
+	
 	updateVelocity()
 	move_and_slide()
 	updateAnimation()

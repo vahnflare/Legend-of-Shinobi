@@ -403,7 +403,7 @@ _data = {
 &"hurtBlink": SubResource("Animation_boad6")
 }
 
-[node name="Player" type="CharacterBody2D" unique_id=1223032299 groups=["player", "player_attack"]]
+[node name="Player" type="CharacterBody2D" unique_id=1223032299 groups=["player"]]
 z_index = 1
 y_sort_enabled = true
 texture_filter = 1

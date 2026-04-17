@@ -1,13 +1,15 @@
 extends Control
 
 @onready var music = $AudioStreamPlayer
+@onready var anim = $AnimationPlayer
 
 func _ready() -> void:
+	anim.play("Appear_Title")
 	music.play()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 
 
