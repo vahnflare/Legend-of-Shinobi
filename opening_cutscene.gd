@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var text_label = $DialogueUI/Panel/Label
 @onready var name_label = $DialogueUI/Panel/NameLabel
+@onready var music = $AudioStreamPlayer
 
 var dialogue = [
 	"Help me...",
@@ -16,6 +17,7 @@ var index = 0
 func _ready():
 	name_label.text = "CaveGirl"
 	show_text()
+	music.play()
 
 func show_text():
 	text_label.text = dialogue[index]

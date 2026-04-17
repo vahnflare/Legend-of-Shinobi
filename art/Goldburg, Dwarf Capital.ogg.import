@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cqwncakfokshi"
+path="res://.godot/imported/Goldburg, Dwarf Capital.ogg-5214e05a0f758483522d595787f54bac.oggvorbisstr"
+
+[deps]
+
+source_file="res://art/Goldburg, Dwarf Capital.ogg"
+dest_files=["res://.godot/imported/Goldburg, Dwarf Capital.ogg-5214e05a0f758483522d595787f54bac.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

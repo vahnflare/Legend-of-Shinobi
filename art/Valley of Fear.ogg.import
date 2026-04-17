@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://j3tgugqea63g"
+path="res://.godot/imported/Valley of Fear.ogg-f8c1a6c336660e0480e8f425f304876d.oggvorbisstr"
+
+[deps]
+
+source_file="res://art/Valley of Fear.ogg"
+dest_files=["res://.godot/imported/Valley of Fear.ogg-f8c1a6c336660e0480e8f425f304876d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

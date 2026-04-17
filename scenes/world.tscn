@@ -14,7 +14,7 @@
 [ext_resource type="Script" uid="uid://dfpsgap7dwb0i" path="res://gui/canvas_layer.gd" id="10_fnad4"]
 [ext_resource type="PackedScene" uid="uid://bts2don3vseob" path="res://gui/inventory_gui.tscn" id="11_6clgd"]
 [ext_resource type="PackedScene" uid="uid://bmmqhrfrg030t" path="res://npc/npc.tscn" id="13_31fws"]
-[ext_resource type="AudioStream" uid="uid://be0k3k5qe5f3m" path="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Audio/Musics/1 - Adventure Begin.ogg" id="14_jfwxp"]
+[ext_resource type="AudioStream" uid="uid://cqwncakfokshi" path="res://art/Goldburg, Dwarf Capital.ogg" id="13_dss4m"]
 [ext_resource type="PackedScene" uid="uid://co55syytak4bs" path="res://scenes/scene_trigger.tscn" id="16_dss4m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l0ej8"]
@@ -1253,7 +1253,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="AdventureMusic" type="AudioStreamPlayer" parent="." unique_id=1112537079]
-stream = ExtResource("14_jfwxp")
+stream = ExtResource("13_dss4m")
 volume_db = -10.0
 autoplay = true
 parameters/looping = true

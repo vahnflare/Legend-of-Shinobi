@@ -1,2 +1,0 @@
-# Legend-of-Shinobi
-

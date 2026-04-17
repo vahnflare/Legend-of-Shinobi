@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://ii3ena8tdtq7" path="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Ui/Dialog/DialogBoxFaceset.png" id="2_68hdd"]
 [ext_resource type="Texture2D" uid="uid://dv8xcn5x4o2ne" path="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Actor/Character/Cavegirl/Faceset.png" id="3_vmcxx"]
 [ext_resource type="Texture2D" uid="uid://c80h7x10euqg3" path="res://Legend of Shinobi - Asset Pack/Legend of Shinobi- Assets/Actor/Character/Cavegirl/SpriteSheet.png" id="4_68hdd"]
+[ext_resource type="AudioStream" uid="uid://nig4thi1qrsj" path="res://art/Smiling Forest.ogg" id="5_vmcxx"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ijp81"]
 texture = ExtResource("2_68hdd")
@@ -68,3 +69,7 @@ position = Vector2(114, 69)
 texture = ExtResource("4_68hdd")
 hframes = 4
 vframes = 7
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="." unique_id=961129856]
+stream = ExtResource("5_vmcxx")
+autoplay = true
