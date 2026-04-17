@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export var speed = 20
 @export var limit = 0.5
 @export var endPoint: Marker2D
-@export var dialogue_text: String = "Hello there!"
+@export var dialogue_text: String = "You save me!"
 
 @onready var animations = $AnimationPlayer
 @onready var interaction_area = $InteractionArea
