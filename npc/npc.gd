@@ -13,7 +13,7 @@ extends CharacterBody2D
 var startPosition
 var endPosition
 var player_in_range = false
-var is_talking = false
+var is_talking = false	
 
 func _ready():
 	startPosition = position
